@@ -1,0 +1,4 @@
+EditorConfig
+============
+
+sync editor configure
