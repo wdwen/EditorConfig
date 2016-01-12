@@ -17,10 +17,10 @@ DerivedData
 *.hmap
 *.xccheckout
 
-#CocoaPods
+# CocoaPods
 Pods
 
-#OSX 
+# OSX 
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -33,9 +33,10 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 
-#SVN
+# SVN
 .Trashes
 .svn/
+*._*
 
 # It's better to unpack these files and commit the raw source because
 # git has its own built in compression methods.
@@ -49,11 +50,11 @@ Icon
 *.xz
 *.lzma
 
-#packing-only formats
+# packing-only formats
 *.iso
 *.tar
 
-#package management formats
+# package management formats
 *.dmg
 *.xpi
 *.gem
@@ -63,6 +64,6 @@ Icon
 *.s[a-w][a-z]
 *.un~
 
-#Session.vim
+# Session.vim
 .netrwhist
 *~
