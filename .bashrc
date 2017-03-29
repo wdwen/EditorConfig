@@ -1,6 +1,3 @@
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Alias define
 alias reloadBashrc='. ~/.bashrc'
 alias clearUserMail='> /var/mail/DevinWang'
