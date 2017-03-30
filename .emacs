@@ -11,16 +11,18 @@
    '("melpa" . "http://melpa.org/packages/")
    t)
   (package-initialize))
+;; (package-initialize)
 
 (set-language-environment 'utf-8)
-
-;; setup load-path and autoloads
-(add-to-list 'load-path "~/slime")
-(require 'slime-autoloads)
 
 ;; Set your lisp system and, optionally, some contribs
 (setq inferior-lisp-program "~/ccl/dx86cl64")
 (setq slime-contribs '(slime-fancy))
+
+;; setup load-path and autoloads
+(add-to-list 'load-path "~/slime")
+(require 'slime-autoloads)
+(slime-setup)
 
 ;; color theme setup
 (add-to-list 'load-path "~/.emacs.d/emacs-color-theme-solarized")
@@ -37,6 +39,7 @@
 
 ;; Common Lisp mode
 (setq auto-mode-alist (append '(("\\.lisp$" . lisp-mode)) auto-mode-alist))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -49,3 +52,12 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; org config
+(require 'org-install)
+;; The following lines are always needed. Choose your own keys.
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
