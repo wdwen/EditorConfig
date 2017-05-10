@@ -7,3 +7,6 @@ export CCL_DEFAULT_DIRECTORY="$HOME/ccl"
 
 # Java Home
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+# Autojump
+. `brew --prefix`/etc/autojump.sh
