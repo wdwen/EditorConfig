@@ -10,3 +10,7 @@ alias showHideFiles='defaults write com.apple.finder AppleShowAllFiles YES; kill
 alias hideHideFiles='defaults write com.apple.finder AppleShowAllFiles NO;  killall Finder'
 
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+alias grep='grep --color=auto'
+alias gitPrune='git remote prune'
+
+alias appStoreArchive='xcodebuild -exportArchive -archivePath ../archive/appstore.xcarchive -exportOptionsPlist .build/appstore.plist -exportPath ../appstore'
