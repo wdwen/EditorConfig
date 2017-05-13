@@ -1,3 +1,9 @@
+# RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && source `brew --prefix`/etc/autojump.sh
+
 # Alias define
 alias reloadBashrc='. ~/.bashrc'
 alias clearUserMail='> /var/mail/DevinWang'
